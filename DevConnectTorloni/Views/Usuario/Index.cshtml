@@ -1,0 +1,61 @@
+@using Microsoft.EntityFrameworkCore.Metadata.Internal
+@model DevConnectTorloni.Models.TbUsuario
+<link rel="stylesheet" href="~/css/perfil.css">
+
+<script defer>
+const usuarioNovoCadastro = "@ViewBag.UsuarioNovoCadastro";
+
+if(usuarioNovoCadastro == "Nao cadastro"){
+    alert("Usuario nao cadastrado! Tente novamente 👌");
+}
+
+</script>
+
+
+ <main>
+        <div>
+            <!--Formulário-->
+            <form id="formulario" class="estilo-formulario" enctype="multipart/form-data" asp-action="Index" asp-controller="Usuario">
+
+                <img src="../images/logo-devconnect-lg.svg" alt="imagem logotipo grande">
+                <p class=""> Cadastre-se para comunidade
+                    exclusiva para desenvolvedores(as).</p>
+    
+                <div>
+                    <label for="">Nome e Sobrenome:</label>
+                    <input type="text" asp-for="NomeCompleto">
+                </div>
+    
+                <div>
+                    <label for="">Nome de usuário:</label>
+                    <input type="text" asp-for="NomeUsuario">
+                </div>
+    
+                <div>
+                    <label for="">E-Mail:</label>
+                    <input type="email" asp-for="Email">
+                </div>
+    
+                <div>
+                    <label for="">Senha:</label>
+                    <input type="password" asp-for="Senha">
+                </div>
+    
+                <div>
+                    <label for="arquivo" class="botao-upload">Faça upload da sua imagem aqui...</label>
+                    <input type="file" id="arquivo" name="imagem">
+                </div>
+    
+                <button type="submit" class="formulario-botao">Cadastrar-se</button>
+    
+                <p>Ao se cadastrar, você concorda com nossos  
+                    Termos, Políticas de Dados e Políticas de Cookies</p>
+            </form>
+
+            <section id="conectar" class="estilo-formulario">
+                <p>Tem uma conta? <a href="../pages/index.html">Conect-se</a></p>
+
+            </section>
+
+        </div>
+    </main>

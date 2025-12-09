@@ -1,0 +1,232 @@
+main{
+    /*background-color: darkcyan;*/
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-flex-publi{
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#storys{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 10px;
+    overflow-x: scroll;
+}
+
+#storys::-webkit-scrollbar{
+    width: 0;
+}
+
+.card-story{
+    width: 100%;
+    max-width: 100px;
+    /*background-color: coral;*/
+}
+
+.card-story > a{
+    /*background-color: crimson;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.card-story > a > img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-story > a > span{
+    color: var(--cor-preto);
+    font-size: var(--tamanho-fonte-sm);
+    text-transform: lowercase;
+}
+
+.formulario-botao-azul {
+    display: inline-block;
+    align-items: flex-end;
+    padding: 6px 12px;   /* deixei menor */
+    background-color: var(--cor-branco); /* cinza do botão */
+    color: var(--cor-azul);
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.formulario-botao-azul{
+    display: inline-block;
+    padding: 6px 12px;   /* deixei menor */
+    background-color: var(--cor-cinza-escuro1);
+    color: var(--cor-cinza-escuro2);
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+/*seção criar publicação*/
+#cadastro-publi{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 3%;
+}
+
+#cadastro-publi > h2{
+    font-size: var(--tamanho-fonte-lg);
+    color: var(--cor-preto);
+    font-weight: 800;
+}
+
+#cadastro-publi > form{
+    /*background-color: aqua;*/
+    width: 100%;
+}
+
+#cadastro-publi > form > textarea{
+    width: 100% !important;
+    height: 80px !important;
+    background-color: var(--cor-cinza-escuro3);
+    resize: none;
+    padding: 10px;
+    color: var(--cor-cinza-escuro4);
+    font-size: var(--tamanho-fonte-sm);
+    border: var(--borda);
+    
+}
+
+#cadastro-publi > form > textarea::placeholder{
+    color: var(--cor-cinza-medio);
+}
+
+h2{
+    font-family: "Rozha One";
+    color: rgb(246, 246, 246);
+}
+
+#cadastro-publi > form > footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.formulario-botao-azul{
+    width: 100%;
+    max-width: 135px;
+}
+
+/*secao publicacoes*/
+#publicacoes{
+    width: 100%;
+    height: 600px;
+}
+
+.card-publi{
+    width: 100%;
+    background-color: var(--cor-cinza-medio);
+}
+
+.card-publi > header{
+    /*height: 80px;*/
+    background-color: var(--cor-branco);
+    display: flex;
+    align-items: center;
+    padding: 3%;
+}
+
+.card-publi > header > a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--cor-azul);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.card-publi > figure{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem-publicacao{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 420px;
+}
+
+.descricao-publicacao{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: var(--tamanho-fonte-md);
+    font-weight: 500;
+    padding: 0 3%;
+    order: 2;
+    flex-wrap: wrap;
+}
+
+.descricao-publicacao > p{
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 400;
+}
+
+
+.interacoes-publicacao {
+    width: 87px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    order: 1;
+    margin: 15px 3%;
+}
+
+
+.interacoes-publicacao > button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.interacoes-publicacao > button > img{
+
+}
+
+.interacoes-publicacao>span{
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 700;
+    color: var(--cor-preto);
+}
+
+.card-publi>button{
+    margin: 15px 3%;
+    background-color: transparent;
+    border: none;
+
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 400;
+    color: var(--cor-cinza-escuro1)
+}

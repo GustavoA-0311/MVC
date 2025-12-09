@@ -1,8 +1,52 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿﻿@{
+    ViewData["Title"] = "DevConnect - Login";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<link rel="stylesheet" href="~/css/login.css">
+<script defer>
+const usuarioNovoCadastro = "@TempData[key: "UsuarioNovoCadastro"]";
+
+if(usuarioNovoCadastro == "Cadastrado"){
+    alert("Usuario nao cadastrado! Tente novamente");
+}
+</script>
+
+<main>
+    <div>
+
+        <!-- Formulário de login -->
+        <form class="estilo-formulario">
+            <img src="~/images/logo-devconnect-lg.svg" alt="Logo DevConnect">
+
+            <div class="formulario-campos">
+                <label for="usuario">Nome de usuário:</label>
+                <input type="text" id="usuario" name="usuario">
+            </div>
+
+            <div class="formulario-campos">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha">
+            </div>
+
+            <button type="submit" class="formulario-botao-azul">Entrar</button>
+
+            <p>ou</p>
+
+            <a href="#">Esqueceu a senha?</a>
+        </form>
+
+        <!-- Seção de cadastro -->
+        <section id="secao-cadastro" class="estilo-formulario">
+            <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+        </section>
+
+        <p>Obtenha o aplicativo</p>
+
+        <!-- Seção de instalação -->
+        <section id="secao-instalacao">
+            <img src="~/images/app-store.svg" alt="Instale pelo App Store">
+            <img src="~/images/google-play.svg" alt="Instale pelo Google Play">
+        </section>
+
+    </div>
+</main>

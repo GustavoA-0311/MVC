@@ -1,0 +1,82 @@
+
+main{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main > div{
+    width: 90%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* Formulario */
+
+
+#formulario{
+    height: 600px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    gap: 5px;
+}
+
+
+
+.estilo-formulario{
+    border: var(--borda);
+    width: 100%;
+    max-width: 340px;
+    background-color: var(--cor-branco);
+    font-weight: 500;
+}
+
+
+
+
+#formulario > div{
+    width: 100%;
+}
+
+
+
+
+
+#formulario > div > label{
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+
+
+.formulario-botao-verde{
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+.estilo-formulario > p{
+    font-weight: 200;
+    font-size: var(--tamanho-fonte-sm);
+    color: #4e4c4c;
+}
+
+
+
+#Secao-Conecte-se{
+    font-size: var(--tamanho-fonte-md);
+    font-weight: 500;
+}
+
+

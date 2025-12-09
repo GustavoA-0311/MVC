@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\57485910817\\Desktop\\Back _End_Torloni\\MVC\\CadAlunoTorloni\\CadAlunoTorloni.csproj": {}
+    "C:\\Users\\57485910817\\Desktop\\MVC\\CadAlunoTorloni\\CadAlunoTorloni.csproj": {}
   },
   "projects": {
-    "C:\\Users\\57485910817\\Desktop\\Back _End_Torloni\\MVC\\CadAlunoTorloni\\CadAlunoTorloni.csproj": {
+    "C:\\Users\\57485910817\\Desktop\\MVC\\CadAlunoTorloni\\CadAlunoTorloni.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\57485910817\\Desktop\\Back _End_Torloni\\MVC\\CadAlunoTorloni\\CadAlunoTorloni.csproj",
+        "projectUniqueName": "C:\\Users\\57485910817\\Desktop\\MVC\\CadAlunoTorloni\\CadAlunoTorloni.csproj",
         "projectName": "CadAlunoTorloni",
-        "projectPath": "C:\\Users\\57485910817\\Desktop\\Back _End_Torloni\\MVC\\CadAlunoTorloni\\CadAlunoTorloni.csproj",
+        "projectPath": "C:\\Users\\57485910817\\Desktop\\MVC\\CadAlunoTorloni\\CadAlunoTorloni.csproj",
         "packagesPath": "C:\\Users\\57485910817\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\57485910817\\Desktop\\Back _End_Torloni\\MVC\\CadAlunoTorloni\\obj\\",
+        "outputPath": "C:\\Users\\57485910817\\Desktop\\MVC\\CadAlunoTorloni\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\57485910817\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,6 +43,18 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

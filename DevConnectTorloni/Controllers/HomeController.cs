@@ -2,7 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using DevConnectTorloni.Models;
 
-namespace DevConnectTorloni.Controllers;
+namespace DevConnectTorloni.Controllers{}
 
 public class HomeController : Controller
 {

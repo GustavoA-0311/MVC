@@ -1,0 +1,15 @@
+@* importa a model da Aluno *@
+@model CadAlunoTorloni.Models.Aluno
+
+<h1>Cadastro de Aluno</h1>
+
+@* Criar o formulario de cadastro de Aluno *@
+<for asp-action="Create" method="post">
+<label>Nome:</label>
+<input asp-for="Nome" class="from control">
+<br>
+<label>Idade:</label>
+<input asp-for="Idade" class="from-control">
+<br>
+<button class="btn btn-success">Cadastrar</button>
+</Aluno
